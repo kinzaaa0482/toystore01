@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🧸 ToyStore — Sign Up</title>
+  <link rel="stylesheet" href="../cssFile/globalStyles.css"/>
+</head>
+<body>
+
+  <!-- ── NAVBAR ─────────────────────────────────────── -->
+  <nav>
+    <a href="../index.html">🧸 ToyStore</a>
+
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="services.html">Toys</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html"><button class="sm-button">Login</button></a></li>
+      <li><button id="theme-toggle">🌙</button></li>
+    </ul>
+  </nav>
+
+  <!-- ── PAGE CONTENT ───────────────────────────────── -->
+  <div class="page" style="display:flex; flex-direction:column; align-items:center; padding-top:50px;">
+
+    <div style="text-align:center; margin-bottom:32px;">
+      <div style="font-size:3.5rem; margin-bottom:8px;">🎈</div>
+      <h1>Join ToyStore!</h1>
+      <p>Create your free account and unlock exclusive deals, wishlists & more.</p>
+    </div>
+
+    <div class="form-container" style="max-width:520px;">
+      <form id="signupForm" novalidate>
+
+        <div style="display:flex; gap:14px; flex-wrap:wrap;">
+          <div style="flex:1; min-width:160px; margin-bottom:0;">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Alex" required/>
+          </div>
+          <div style="flex:1; min-width:160px; margin-bottom:0;">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Smith" required/>
+          </div>
+        </div>
+
+        <div>
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required/>
+        </div>
+
+        <div>
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000"/>
+        </div>
+
+        <div>
+          <label for="age-group">Shopping For</label>
+          <div class="select-container">
+            <select id="age-group" name="age-group">
+              <option value="">— Select age group —</option>
+              <option value="0-3">Babies &amp; Toddlers (0–3)</option>
+              <option value="4-7">Little Kids (4–7)</option>
+              <option value="8-12">Kids (8–12)</option>
+              <option value="13+">Teens &amp; Collectors (13+)</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Min. 8 characters" required/>
+        </div>
+
+        <div>
+          <label for="confirmPassword">Confirm Password</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter password" required/>
+        </div>
+
+        <div style="margin-bottom:8px;">
+          <label style="display:flex; align-items:flex-start; gap:8px; font-weight:600; cursor:pointer;">
+            <input type="checkbox" id="terms" name="terms" style="width:auto; margin-top:3px;" required/>
+            I agree to the <a href="#" style="margin-left:4px;">Terms of Service</a> &amp; <a href="#">Privacy Policy</a>
+          </label>
+        </div>
+
+        <div style="margin-bottom:8px;">
+          <label style="display:flex; align-items:center; gap:8px; font-weight:600; cursor:pointer;">
+            <input type="checkbox" id="newsletter" name="newsletter" style="width:auto;"/>
+            Send me exclusive deals &amp; offers 🎁
+          </label>
+        </div>
+
+        <div id="signup-alert" class="alert" style="display:none;"></div>
+
+        <div style="margin-top:20px; margin-bottom:0;">
+          <button type="submit" style="width:100%; background:var(--brand-third-color);" class="lg-button">
+            Create My Account 🎉
+          </button>
+        </div>
+
+        <p style="text-align:center; margin-top:20px; margin-bottom:0;">
+          Already have an account? <a href="login.html" style="font-weight:700;">Log in here</a>
+        </p>
+      </form>
+    </div>
+
+    <!-- perks strip -->
+    <div style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center; margin-top:40px; max-width:600px;">
+      <div style="text-align:center; padding:12px 16px; flex:1; min-width:130px; background:var(--bg-card); border-radius:var(--radius-md); box-shadow:var(--shadow-sm);">
+        <div style="font-size:1.8rem;">🎁</div>
+        <p style="font-size:0.85rem; margin:4px 0 0;">Free gift on signup</p>
+      </div>
+      <div style="text-align:center; padding:12px 16px; flex:1; min-width:130px; background:var(--bg-card); border-radius:var(--radius-md); box-shadow:var(--shadow-sm);">
+        <div style="font-size:1.8rem;">⭐</div>
+        <p style="font-size:0.85rem; margin:4px 0 0;">Earn loyalty points</p>
+      </div>
+      <div style="text-align:center; padding:12px 16px; flex:1; min-width:130px; background:var(--bg-card); border-radius:var(--radius-md); box-shadow:var(--shadow-sm);">
+        <div style="font-size:1.8rem;">🔔</div>
+        <p style="font-size:0.85rem; margin:4px 0 0;">Early sale access</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ── FOOTER ─────────────────────────────────────── -->
+  <footer>
+    <div class="footer-container">
+      <div>
+        <h1>🧸 ToyStore</h1>
+        <p>Bringing joy to children everywhere since 2010.</p>
+      </div>
+      <div>
+        <h2>Quick Links</h2>
+        <a href="../index.html">Home</a>
+        <a href="services.html">Our Toys</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+    <p style="text-align:center; border-top:1px solid rgba(255,255,255,0.10); padding-top:20px;">
+      © 2025 ToyStore. All rights reserved.
+    </p>
+  </footer>
+
+  <script src="../jsFile/jsFunctions.js"></script>
+  <script>
+    document.getElementById('signupForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const alertEl = document.getElementById('signup-alert');
+      const pw  = document.getElementById('password').value;
+      const cpw = document.getElementById('confirmPassword').value;
+      const terms = document.getElementById('terms').checked;
+
+      if (!terms) {
+        showAlert('⚠️ Please accept the Terms of Service.', 'error');
+        return;
+      }
+      if (pw.length < 8) {
+        showAlert('⚠️ Password must be at least 8 characters.', 'error');
+        return;
+      }
+      if (pw !== cpw) {
+        showAlert('⚠️ Passwords do not match.', 'error');
+        return;
+      }
+      showAlert('✅ Account created! Redirecting to login...', 'success');
+      setTimeout(() => { window.location.href = 'login.html'; }, 1400);
+
+      function showAlert(msg, type) {
+        alertEl.textContent = msg;
+        alertEl.style.display = 'block';
+        if (type === 'error') {
+          alertEl.style.borderColor = 'var(--brand-primary-color)';
+          alertEl.style.background  = 'rgba(255,71,87,0.08)';
+          alertEl.style.color       = 'var(--brand-primary-color)';
+        } else {
+          alertEl.style.borderColor = 'var(--brand-third-color)';
+          alertEl.style.background  = 'rgba(46,213,115,0.08)';
+          alertEl.style.color       = 'var(--brand-third-color)';
+        }
+      }
+    });
+  </script>
+</body>
+</html>

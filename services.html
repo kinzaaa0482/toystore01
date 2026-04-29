@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🧸 ToyStore — Our Toys</title>
+  <link rel="stylesheet" href="../cssFile/globalStyles.css"/>
+</head>
+<body>
+
+  <!-- ── NAVBAR ─────────────────────────────────────── -->
+  <nav>
+    <a href="../index.html">🧸 ToyStore</a>
+
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="services.html" style="color:var(--brand-primary-color)">Toys</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="login.html"><button class="sm-button">Login</button></a></li>
+      <li><button id="theme-toggle">🌙</button></li>
+    </ul>
+  </nav>
+
+  <div class="page">
+
+    <!-- ── PAGE HEADER ──────────────────────────────── -->
+    <div style="text-align:center; padding:32px 0 8px;">
+      <h1>Our Toy Collection 🎠</h1>
+      <p style="max-width:560px; margin:0 auto;">Browse our full range of hand-picked, safety-certified toys for every age and interest.</p>
+    </div>
+    <div class="divider"></div>
+
+    <!-- ── FILTER BAR ───────────────────────────────── -->
+    <div style="display:flex; flex-wrap:wrap; gap:14px; align-items:flex-end; margin-bottom:28px; background:var(--bg-card); padding:20px 24px; border-radius:var(--radius-lg); box-shadow:var(--shadow-sm);">
+      <div style="flex:1; min-width:160px;">
+        <label>Category</label>
+        <div class="select-container">
+          <select id="filter-cat">
+            <option value="">All Categories</option>
+            <option value="puzzle">Puzzles</option>
+            <option value="rc">RC Vehicles</option>
+            <option value="plush">Plush Toys</option>
+            <option value="stem">STEM Kits</option>
+            <option value="board">Board Games</option>
+            <option value="arts">Arts &amp; Crafts</option>
+          </select>
+        </div>
+      </div>
+      <div style="flex:1; min-width:160px;">
+        <label>Age Group</label>
+        <div class="select-container">
+          <select id="filter-age">
+            <option value="">All Ages</option>
+            <option value="0-3">0–3 Years</option>
+            <option value="4-7">4–7 Years</option>
+            <option value="8-12">8–12 Years</option>
+            <option value="13+">13+ Years</option>
+          </select>
+        </div>
+      </div>
+      <div style="flex:1; min-width:160px;">
+        <label>Sort By</label>
+        <div class="select-container">
+          <select id="filter-sort">
+            <option value="featured">Featured</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="newest">Newest First</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <button class="sm-button" style="background:var(--brand-third-color);">🔍 Filter</button>
+      </div>
+    </div>
+
+    <!-- ── PRODUCT CARDS ─────────────────────────────── -->
+    <div class="card-container">
+
+      <div class="card">
+        <div style="font-size:2.8rem; text-align:center; margin-bottom:10px;">🧩</div>
+        <span class="badge" style="background:var(--brand-secondary-color); color:#333; margin-bottom:8px;">Ages 6+</span>
+        <h3>Dino World Puzzle</h3>
+        <p>500-piece dinosaur landscape puzzle. Perfect for young paleontologists!</p>
+        <div style="color:var(--brand-secondary-color); margin:4px 0;">★★★★★</div>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-top:auto; padding-top:12px;">
+          <span style="font-size:1.2rem; font-weight:800; color:var(--brand-primary-color);">$18.99</span>
+          <span class="badge" style="background:rgba(46,213,115,0.15); color:var(--brand-third-color);">In Stock</span>
+        </div>
+        <button data-add-cart style="margin-top:10px; width:100%;">🛒 Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div style="font-size:2.8rem; text-align:center; margin-bottom:10px;">🚗</div>
+        <span class="badge" style="background:var(--brand-secondary-color); color:#333; margin-bottom:8px;">Ages 8+</span>
+        <h3>Turbo RC Racer</h3>
+        <p>2.4GHz remote control car with 30mph top speed. Rechargeable battery.</p>
+        <div style="color:var(--brand-secondary-color); margin:4px 0;">★★★★☆</div>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-top:auto; padding-top:12px;">
+          <span style="font-size:1.2rem; font-weight:800; color:var(--brand-primary-color);">$54.99</span>
+          <span class="badge" style="background:rgba(46,213,115,0.15); color:var(--brand-third-color);">In Stock</span>
+        </div>
+        <button data-add-cart style="margin-top:10px; width:100%;">🛒 Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div style="font-size:2.8rem; text-align:center; margin-bottom:10px;">🧸</div>
+        <span class="badge" style="background:var(--brand-secondary-color); color:#333; margin-bottom:8px;">Ages 1+</span>
+        <h3>Cuddle Bear XL</h3>
+        <p>Ultra-soft 24" plush bear. Machine washable. Hypoallergenic filling.</p>
+        <div style="color:var(--brand-secondary-color); margin:4px 0;">★★★★★</div>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-top:auto; padding-top:12px;">
+          <span style="font-size:1.2rem; font-weight:800; color:var(--brand-primary-color);">$27.99</span>
+          <span class="badge" style="background:rgba(46,213,115,0.15); color:var(--brand-third-color);">In Stock</span>
+        </div>
+        <button data-add-cart style="margin-top:10px; width:100%;">🛒 Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div style="font-size:2.8rem; text-align:center; margin-bottom:10px;">🔬</div>
+        <span class="badge" style="background:var(--brand-fourth-color); color:#fff; margin-bottom:8px;">Ages 10+</span>
+        <h3>Chemistry Lab Kit</h3>
+        <p>50+ safe experiments. Includes goggles, test tubes, and guide book.</p>
+        <div style="color:var(--brand-secondary-color); margin:4px 0;">★★★★☆</div>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-top:auto; padding-top:12px;">
+          <span style="font-size:1.2rem; font-weight:800; color:var(--brand-primary-color);">$39.99</span>
+          <span class="badge" style="background:rgba(46,213,115,0.15); color:var(--brand-third-color);">In Stock</span>
+        </div>
+        <button data-add-cart style="margin-top:10px; width:100%;">🛒 Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div style="font-size:2.8rem; text-align:center; margin-bottom:10px;">🎨</div>
+        <span class="badge" style="background:var(--brand-secondary-color); color:#333; margin-bottom:8px;">Ages 4+</span>
+        <h3>Rainbow Art Studio</h3>
+        <p>120-piece art set with paints, markers, stencils and canvas boards.</p>
+        <div style="color:var(--brand-secondary-color); margin:4px 0;">★★★★★</div>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-top:auto; padding-top:12px;">
+          <span style="font-size:1.2rem; font-weight:800; color:var(--brand-primary-color);">$32.99</span>
+          <span class="badge" style="background:rgba(255,71,87,0.12); color:var(--brand-primary-color);">Low Stock</span>
+        </div>
+        <button data-add-cart style="margin-top:10px; width:100%;">🛒 Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div style="font-size:2.8rem; text-align:center; margin-bottom:10px;">🎲</div>
+        <span class="badge" style="background:var(--brand-secondary-color); color:#333; margin-bottom:8px;">Ages 7+</span>
+        <h3>Quest Board Game</h3>
+        <p>Epic adventure for 2–6 players. 90 min gameplay. Multiple endings!</p>
+        <div style="color:var(--brand-secondary-color); margin:4px 0;">★★★★☆</div>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-top:auto; padding-top:12px;">
+          <span style="font-size:1.2rem; font-weight:800; color:var(--brand-primary-color);">$44.99</span>
+          <span class="badge" style="background:rgba(46,213,115,0.15); color:var(--brand-third-color);">In Stock</span>
+        </div>
+        <button data-add-cart style="margin-top:10px; width:100%;">🛒 Add to Cart</button>
+      </div>
+
+    </div>
+
+    <!-- ── PRODUCT TABLE ─────────────────────────────── -->
+    <div style="margin-top:48px;">
+      <h2 class="section-title">📋 Full Product List</h2>
+      <div class="divider"></div>
+      <p style="text-align:center; color:var(--text-muted-color); margin-bottom:20px;">Click any row to select it</p>
+
+      <div class="table-container">
+        <table style="min-width:600px; max-width:100%;">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Product Name</th>
+              <th>Category</th>
+              <th>Age</th>
+              <th>Price</th>
+              <th>Stock</th>
+              <th>Rating</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Dino World Puzzle</td>
+              <td>Puzzles</td>
+              <td>6+</td>
+              <td>$18.99</td>
+              <td><span class="badge" style="background:rgba(46,213,115,0.15); color:var(--brand-third-color);">In Stock</span></td>
+              <td>★★★★★</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Turbo RC Racer</td>
+              <td>RC Vehicles</td>
+              <td>8+</td>
+              <td>$54.99</td>
+              <td><span class="badge" style="background:rgba(46,213,115,0.15); color:var(--brand-third-color);">In Stock</span></td>
+              <td>★★★★☆</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Cuddle Bear XL</td>
+              <td>Plush Toys</td>
+              <td>1+</td>
+              <td>$27.99</td>
+              <td><span class="badge" style="background:rgba(46,213,115,0.15); color:var(--brand-third-color);">In Stock</span></td>
+              <td>★★★★★</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Chemistry Lab Kit</td>
+              <td>STEM Kits</td>
+              <td>10+</td>
+              <td>$39.99</td>
+              <td><span class="badge" style="background:rgba(46,213,115,0.15); color:var(--brand-third-color);">In Stock</span></td>
+              <td>★★★★☆</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Rainbow Art Studio</td>
+              <td>Arts &amp; Crafts</td>
+              <td>4+</td>
+              <td>$32.99</td>
+              <td><span class="badge" style="background:rgba(255,71,87,0.12); color:var(--brand-primary-color);">Low Stock</span></td>
+              <td>★★★★★</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Quest Board Game</td>
+              <td>Board Games</td>
+              <td>7+</td>
+              <td>$44.99</td>
+              <td><span class="badge" style="background:rgba(46,213,115,0.15); color:var(--brand-third-color);">In Stock</span></td>
+              <td>★★★★☆</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Space Rocket Kit</td>
+              <td>STEM Kits</td>
+              <td>8+</td>
+              <td>$21.00</td>
+              <td><span class="badge" style="background:rgba(46,213,115,0.15); color:var(--brand-third-color);">In Stock</span></td>
+              <td>★★★★★</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Mini Guitar Set</td>
+              <td>Music Toys</td>
+              <td>5+</td>
+              <td>$35.00</td>
+              <td><span class="badge" style="background:rgba(255,71,87,0.12); color:var(--brand-primary-color);">Low Stock</span></td>
+              <td>★★★★☆</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Magnetic Tiles 60pc</td>
+              <td>Building Toys</td>
+              <td>3+</td>
+              <td>$44.00</td>
+              <td><span class="badge" style="background:rgba(46,213,115,0.15); color:var(--brand-third-color);">In Stock</span></td>
+              <td>★★★★★</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Robot Builder Pro</td>
+              <td>STEM Kits</td>
+              <td>12+</td>
+              <td>$79.99</td>
+              <td><span class="badge" style="background:rgba(255,165,0,0.15); color:orange;">Pre-order</span></td>
+              <td>★★★★★</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ── FOOTER ─────────────────────────────────────── -->
+  <footer>
+    <div class="footer-container">
+      <div>
+        <h1>🧸 ToyStore</h1>
+        <p>Bringing joy to children everywhere since 2010.</p>
+        <p>📍 123 Play Street, Fun City, USA</p>
+      </div>
+      <div>
+        <h2>Quick Links</h2>
+        <a href="../index.html">Home</a>
+        <a href="services.html">Our Toys</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="dashboard.html">Dashboard</a>
+      </div>
+      <div>
+        <h2>Categories</h2>
+        <a href="#">Puzzles</a>
+        <a href="#">RC Vehicles</a>
+        <a href="#">STEM Kits</a>
+        <a href="#">Board Games</a>
+      </div>
+    </div>
+    <p style="text-align:center; border-top:1px solid rgba(255,255,255,0.10); padding-top:20px;">
+      © 2025 ToyStore. All rights reserved.
+    </p>
+  </footer>
+
+  <script src="../jsFile/jsFunctions.js"></script>
+</body>
+</html>

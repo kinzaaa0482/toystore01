@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🧸 ToyStore — Contact Us</title>
+  <link rel="stylesheet" href="../cssFile/globalStyles.css"/>
+</head>
+<body>
+
+  <!-- ── NAVBAR ─────────────────────────────────────── -->
+  <nav>
+    <a href="../index.html">🧸 ToyStore</a>
+
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="services.html">Toys</a></li>
+      <li><a href="contact.html" style="color:var(--brand-primary-color)">Contact</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="login.html"><button class="sm-button">Login</button></a></li>
+      <li><button id="theme-toggle">🌙</button></li>
+    </ul>
+  </nav>
+
+  <div class="page">
+
+    <!-- ── PAGE HEADER ──────────────────────────────── -->
+    <div style="text-align:center; padding:32px 0 8px;">
+      <h1>Get in Touch 💌</h1>
+      <p style="max-width:520px; margin:0 auto;">Have a question, a toy request, or just want to say hi? We'd love to hear from you!</p>
+    </div>
+    <div class="divider"></div>
+
+    <!-- ── CONTACT LAYOUT ───────────────────────────── -->
+    <div style="display:flex; flex-wrap:wrap; gap:32px; align-items:flex-start; justify-content:center; margin-top:12px;">
+
+      <!-- FORM -->
+      <div class="form-container" style="flex:1; max-width:520px;">
+        <h2 style="margin-bottom:20px;">Send Us a Message</h2>
+        <form id="contactForm" novalidate>
+
+          <div>
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Alex Johnson" required/>
+          </div>
+
+          <div>
+            <label for="cemail">Email Address</label>
+            <input type="email" id="cemail" name="cemail" placeholder="you@example.com" required/>
+          </div>
+
+          <div>
+            <label for="subject">Subject</label>
+            <div class="select-container">
+              <select id="subject" name="subject">
+                <option value="">— Select a topic —</option>
+                <option value="order">Order Issue</option>
+                <option value="return">Return / Refund</option>
+                <option value="product">Product Question</option>
+                <option value="wholesale">Wholesale Inquiry</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us what's on your mind..." required></textarea>
+          </div>
+
+          <div id="contact-alert" class="alert" style="display:none;"></div>
+
+          <div style="margin-bottom:0;">
+            <button type="submit" style="width:100%;" class="lg-button">Send Message 🚀</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- INFO PANEL -->
+      <div style="flex:1; min-width:260px; max-width:340px; display:flex; flex-direction:column; gap:20px;">
+
+        <div style="background:var(--bg-card); border-radius:var(--radius-lg); padding:24px; box-shadow:var(--shadow-sm); border-left:4px solid var(--brand-primary-color);">
+          <h3 style="margin-bottom:12px;">📍 Visit Our Store</h3>
+          <p style="margin:0;">123 Play Street<br>Fun City, CA 90210<br>United States</p>
+        </div>
+
+        <div style="background:var(--bg-card); border-radius:var(--radius-lg); padding:24px; box-shadow:var(--shadow-sm); border-left:4px solid var(--brand-secondary-color);">
+          <h3 style="margin-bottom:12px;">📞 Call Us</h3>
+          <p style="margin:0;">+1 (800) TOY-SHOP<br>Mon–Fri: 9am – 6pm PST<br>Sat: 10am – 4pm PST</p>
+        </div>
+
+        <div style="background:var(--bg-card); border-radius:var(--radius-lg); padding:24px; box-shadow:var(--shadow-sm); border-left:4px solid var(--brand-third-color);">
+          <h3 style="margin-bottom:12px;">📧 Email Us</h3>
+          <p style="margin:0;">
+            <a href="mailto:hello@toystore.com">hello@toystore.com</a><br>
+            <a href="mailto:support@toystore.com">support@toystore.com</a>
+          </p>
+        </div>
+
+        <div style="background:var(--bg-card); border-radius:var(--radius-lg); padding:24px; box-shadow:var(--shadow-sm); border-left:4px solid var(--brand-accent-color);">
+          <h3 style="margin-bottom:12px;">💬 Social Media</h3>
+          <div style="display:flex; flex-wrap:wrap; gap:8px;">
+            <a href="#" class="link-button sm-button" style="background:var(--brand-fourth-color);">🐦 Twitter</a>
+            <a href="#" class="link-button sm-button" style="background:#E1306C;">📸 Instagram</a>
+            <a href="#" class="link-button sm-button" style="background:#1877F2;">👍 Facebook</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ── FAQ ───────────────────────────────────────── -->
+    <div style="margin-top:56px;">
+      <h2 class="section-title">Frequently Asked Questions ❓</h2>
+      <div class="divider"></div>
+      <div style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center;">
+
+        <div style="flex:1; min-width:260px; max-width:380px; background:var(--bg-card); border-radius:var(--radius-lg); padding:24px; box-shadow:var(--shadow-sm);">
+          <h4>What is your return policy?</h4>
+          <p>We offer a 30-day no-questions-asked return policy on all items in original condition.</p>
+        </div>
+        <div style="flex:1; min-width:260px; max-width:380px; background:var(--bg-card); border-radius:var(--radius-lg); padding:24px; box-shadow:var(--shadow-sm);">
+          <h4>Do you ship internationally?</h4>
+          <p>Yes! We ship to 40+ countries. International shipping rates apply and are calculated at checkout.</p>
+        </div>
+        <div style="flex:1; min-width:260px; max-width:380px; background:var(--bg-card); border-radius:var(--radius-lg); padding:24px; box-shadow:var(--shadow-sm);">
+          <h4>Are all toys safety certified?</h4>
+          <p>Absolutely. Every toy we carry meets ASTM, CE, and EN71 safety standards.</p>
+        </div>
+        <div style="flex:1; min-width:260px; max-width:380px; background:var(--bg-card); border-radius:var(--radius-lg); padding:24px; box-shadow:var(--shadow-sm);">
+          <h4>How fast is shipping?</h4>
+          <p>Standard: 3–5 business days. Express: 1–2 business days. Free on orders $30+.</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ── FOOTER ─────────────────────────────────────── -->
+  <footer>
+    <div class="footer-container">
+      <div>
+        <h1>🧸 ToyStore</h1>
+        <p>Bringing joy to children everywhere since 2010.</p>
+        <p>📍 123 Play Street, Fun City, USA</p>
+        <p>📞 +1 (800) TOY-SHOP</p>
+      </div>
+      <div>
+        <h2>Quick Links</h2>
+        <a href="../index.html">Home</a>
+        <a href="services.html">Our Toys</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="dashboard.html">Dashboard</a>
+      </div>
+      <div>
+        <h2>Customer Care</h2>
+        <a href="#">Shipping Policy</a>
+        <a href="#">Returns &amp; Refunds</a>
+        <a href="#">FAQ</a>
+        <a href="#">Safety Standards</a>
+      </div>
+    </div>
+    <p style="text-align:center; border-top:1px solid rgba(255,255,255,0.10); padding-top:20px;">
+      © 2025 ToyStore. All rights reserved.
+    </p>
+  </footer>
+
+  <script src="../jsFile/jsFunctions.js"></script>
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const alertEl = document.getElementById('contact-alert');
+      const name  = document.getElementById('name').value.trim();
+      const email = document.getElementById('cemail').value.trim();
+      const msg   = document.getElementById('message').value.trim();
+
+      if (!name || !email || !msg) {
+        alertEl.textContent = '⚠️ Please fill in all required fields.';
+        alertEl.style.display = 'block';
+        alertEl.style.borderColor = 'var(--brand-primary-color)';
+        alertEl.style.background  = 'rgba(255,71,87,0.08)';
+        alertEl.style.color       = 'var(--brand-primary-color)';
+        return;
+      }
+      alertEl.textContent = '✅ Message sent! We\'ll get back to you within 24 hours.';
+      alertEl.style.display = 'block';
+      alertEl.style.borderColor = 'var(--brand-third-color)';
+      alertEl.style.background  = 'rgba(46,213,115,0.08)';
+      alertEl.style.color       = 'var(--brand-third-color)';
+      this.reset();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🧸 ToyStore — Dashboard</title>
+  <link rel="stylesheet" href="../cssFile/globalStyles.css"/>
+</head>
+<body>
+
+  <!-- ── NAVBAR ─────────────────────────────────────── -->
+  <nav>
+    <a href="../index.html">🧸 ToyStore</a>
+
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="services.html">Toys</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="dashboard.html" style="color:var(--brand-primary-color)">Dashboard</a></li>
+      <li><a href="login.html"><button class="sm-button border-button">Logout</button></a></li>
+      <li><button id="theme-toggle">🌙</button></li>
+    </ul>
+  </nav>
+
+  <div class="page">
+
+    <!-- ── WELCOME BANNER ───────────────────────────── -->
+    <div style="background:linear-gradient(135deg, var(--brand-primary-color), var(--brand-accent-color)); border-radius:var(--radius-lg); padding:32px 36px; margin-bottom:32px; color:#fff; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:20px;">
+      <div>
+        <h1 style="color:#fff; margin-bottom:6px;">Welcome back, Alex! 👋</h1>
+        <p style="color:rgba(255,255,255,0.85); margin:0;">Here's what's happening with your ToyStore account.</p>
+      </div>
+      <div style="font-size:4rem; opacity:0.8;">🎁</div>
+    </div>
+
+    <!-- ── STAT CARDS ────────────────────────────────── -->
+    <div style="display:flex; flex-wrap:wrap; gap:20px; margin-bottom:36px;">
+
+      <div class="stat-card" style="border-left-color:var(--brand-primary-color);">
+        <div style="font-size:2rem; margin-bottom:6px;">🛒</div>
+        <h4>Total Orders</h4>
+        <div style="font-size:2.2rem; font-family:'Fredoka One',cursive; color:var(--brand-primary-color); line-height:1;">24</div>
+        <p style="font-size:0.8rem; color:var(--text-muted-color); margin:4px 0 0;">+3 this month</p>
+      </div>
+
+      <div class="stat-card" style="border-left-color:var(--brand-secondary-color);">
+        <div style="font-size:2rem; margin-bottom:6px;">💰</div>
+        <h4>Total Spent</h4>
+        <div style="font-size:2.2rem; font-family:'Fredoka One',cursive; color:var(--brand-secondary-color); line-height:1;">$648</div>
+        <p style="font-size:0.8rem; color:var(--text-muted-color); margin:4px 0 0;">Lifetime value</p>
+      </div>
+
+      <div class="stat-card" style="border-left-color:var(--brand-third-color);">
+        <div style="font-size:2rem; margin-bottom:6px;">⭐</div>
+        <h4>Loyalty Points</h4>
+        <div style="font-size:2.2rem; font-family:'Fredoka One',cursive; color:var(--brand-third-color); line-height:1;">1,240</div>
+        <p style="font-size:0.8rem; color:var(--text-muted-color); margin:4px 0 0;">≈ $12.40 reward</p>
+      </div>
+
+      <div class="stat-card" style="border-left-color:var(--brand-fourth-color);">
+        <div style="font-size:2rem; margin-bottom:6px;">❤️</div>
+        <h4>Wishlist Items</h4>
+        <div style="font-size:2.2rem; font-family:'Fredoka One',cursive; color:var(--brand-fourth-color); line-height:1;">7</div>
+        <p style="font-size:0.8rem; color:var(--text-muted-color); margin:4px 0 0;">2 back in stock</p>
+      </div>
+
+      <div class="stat-card" style="border-left-color:var(--brand-accent-color);">
+        <div style="font-size:2rem; margin-bottom:6px;">🎫</div>
+        <h4>Active Coupons</h4>
+        <div style="font-size:2.2rem; font-family:'Fredoka One',cursive; color:var(--brand-accent-color); line-height:1;">3</div>
+        <p style="font-size:0.8rem; color:var(--text-muted-color); margin:4px 0 0;">Expires this month</p>
+      </div>
+
+    </div>
+
+    <!-- ── TWO COLUMN LAYOUT ─────────────────────────── -->
+    <div style="display:flex; flex-wrap:wrap; gap:28px; align-items:flex-start;">
+
+      <!-- ORDER HISTORY TABLE -->
+      <div style="flex:2; min-width:320px;">
+        <h2>📦 Recent Orders</h2>
+        <div class="divider" style="margin-left:0;"></div>
+
+        <div class="table-container">
+          <table style="min-width:500px; max-width:100%;">
+            <thead>
+              <tr>
+                <th>Order ID</th>
+                <th>Item(s)</th>
+                <th>Date</th>
+                <th>Total</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#TS-9041</td>
+                <td>Dino World Puzzle</td>
+                <td>Apr 20, 2025</td>
+                <td>$18.99</td>
+                <td><span class="badge" style="background:rgba(46,213,115,0.15); color:var(--brand-third-color);">Delivered</span></td>
+              </tr>
+              <tr>
+                <td>#TS-9028</td>
+                <td>Turbo RC Racer × 2</td>
+                <td>Apr 15, 2025</td>
+                <td>$109.98</td>
+                <td><span class="badge" style="background:rgba(255,215,0,0.2); color:#b8860b;">Shipped</span></td>
+              </tr>
+              <tr>
+                <td>#TS-9011</td>
+                <td>Rainbow Art Studio</td>
+                <td>Apr 8, 2025</td>
+                <td>$32.99</td>
+                <td><span class="badge" style="background:rgba(46,213,115,0.15); color:var(--brand-third-color);">Delivered</span></td>
+              </tr>
+              <tr>
+                <td>#TS-8997</td>
+                <td>Chemistry Lab Kit</td>
+                <td>Mar 30, 2025</td>
+                <td>$39.99</td>
+                <td><span class="badge" style="background:rgba(46,213,115,0.15); color:var(--brand-third-color);">Delivered</span></td>
+              </tr>
+              <tr>
+                <td>#TS-8874</td>
+                <td>Quest Board Game</td>
+                <td>Mar 18, 2025</td>
+                <td>$44.99</td>
+                <td><span class="badge" style="background:rgba(255,71,87,0.12); color:var(--brand-primary-color);">Returned</span></td>
+              </tr>
+              <tr>
+                <td>#TS-8820</td>
+                <td>Cuddle Bear XL × 3</td>
+                <td>Mar 5, 2025</td>
+                <td>$83.97</td>
+                <td><span class="badge" style="background:rgba(46,213,115,0.15); color:var(--brand-third-color);">Delivered</span></td>
+              </tr>
+              <tr>
+                <td>#TS-8750</td>
+                <td>Space Rocket Kit</td>
+                <td>Feb 22, 2025</td>
+                <td>$21.00</td>
+                <td><span class="badge" style="background:rgba(46,213,115,0.15); color:var(--brand-third-color);">Delivered</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div style="margin-top:14px; text-align:right;">
+          <a href="services.html" class="link-button sm-button">Shop More Toys 🛒</a>
+        </div>
+      </div>
+
+      <!-- SIDE PANEL -->
+      <div style="flex:1; min-width:260px; display:flex; flex-direction:column; gap:20px;">
+
+        <!-- Profile Card -->
+        <div style="background:var(--bg-card); border-radius:var(--radius-lg); padding:24px; box-shadow:var(--shadow-sm); text-align:center;">
+          <div style="width:72px; height:72px; border-radius:50%; background:linear-gradient(135deg, var(--brand-primary-color), var(--brand-accent-color)); display:flex; align-items:center; justify-content:center; font-size:2rem; margin:0 auto 12px;">👦</div>
+          <h3 style="margin-bottom:4px;">Alex Johnson</h3>
+          <p style="font-size:0.875rem; margin:0;">alex@example.com</p>
+          <span class="badge" style="background:var(--brand-secondary-color); color:#333; margin-top:8px;">⭐ Gold Member</span>
+          <div style="margin-top:16px;">
+            <button class="border-button sm-button" style="width:100%;">Edit Profile</button>
+          </div>
+        </div>
+
+        <!-- Active Coupons -->
+        <div style="background:var(--bg-card); border-radius:var(--radius-lg); padding:24px; box-shadow:var(--shadow-sm);">
+          <h3 style="margin-bottom:16px;">🎫 My Coupons</h3>
+          <div style="display:flex; flex-direction:column; gap:10px;">
+            <div style="background:rgba(255,71,87,0.06); border:1.5px dashed var(--brand-primary-color); border-radius:var(--radius-md); padding:12px 14px; display:flex; justify-content:space-between; align-items:center;">
+              <span style="font-weight:800; color:var(--brand-primary-color); letter-spacing:1px;">SAVE20</span>
+              <span style="font-size:0.8rem; color:var(--text-muted-color);">20% off · Exp Apr 30</span>
+            </div>
+            <div style="background:rgba(255,215,0,0.08); border:1.5px dashed var(--brand-secondary-color); border-radius:var(--radius-md); padding:12px 14px; display:flex; justify-content:space-between; align-items:center;">
+              <span style="font-weight:800; color:#b8860b; letter-spacing:1px;">FREESHIP</span>
+              <span style="font-size:0.8rem; color:var(--text-muted-color);">Free ship · Exp May 10</span>
+            </div>
+            <div style="background:rgba(46,213,115,0.06); border:1.5px dashed var(--brand-third-color); border-radius:var(--radius-md); padding:12px 14px; display:flex; justify-content:space-between; align-items:center;">
+              <span style="font-weight:800; color:var(--brand-third-color); letter-spacing:1px;">BDAY10</span>
+              <span style="font-size:0.8rem; color:var(--text-muted-color);">$10 off · Exp May 31</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div style="background:var(--bg-card); border-radius:var(--radius-lg); padding:24px; box-shadow:var(--shadow-sm);">
+          <h3 style="margin-bottom:16px;">⚡ Quick Actions</h3>
+          <div style="display:flex; flex-direction:column; gap:10px;">
+            <button class="border-button" style="width:100%; text-align:left; padding:10px 14px;">❤️ View Wishlist (7)</button>
+            <button class="border-button" style="width:100%; text-align:left; padding:10px 14px;">📍 Manage Addresses</button>
+            <button class="border-button" style="width:100%; text-align:left; padding:10px 14px;">💳 Payment Methods</button>
+            <button class="border-button" style="width:100%; text-align:left; padding:10px 14px;">🔔 Notifications</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ── FOOTER ─────────────────────────────────────── -->
+  <footer>
+    <div class="footer-container">
+      <div>
+        <h1>🧸 ToyStore</h1>
+        <p>Bringing joy to children everywhere since 2010.</p>
+      </div>
+      <div>
+        <h2>Quick Links</h2>
+        <a href="../index.html">Home</a>
+        <a href="services.html">Our Toys</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div>
+        <h2>Account</h2>
+        <a href="dashboard.html">My Dashboard</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+      </div>
+    </div>
+    <p style="text-align:center; border-top:1px solid rgba(255,255,255,0.10); padding-top:20px;">
+      © 2025 ToyStore. All rights reserved.
+    </p>
+  </footer>
+
+  <script src="../jsFile/jsFunctions.js"></script>
+</body>
+</html>

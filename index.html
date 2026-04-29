@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🧸 ToyStore — Home</title>
+  <link rel="stylesheet" href="cssFile/globalStyles.css"/>
+</head>
+<body>
+
+  <!-- ── NAVBAR ─────────────────────────────────────── -->
+  <nav>
+    <a href="index.html">🧸 ToyStore</a>
+
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul>
+      <li><a href="index.html" style="color:var(--brand-primary-color)">Home</a></li>
+      <li><a href="pages/services.html">Toys</a></li>
+      <li><a href="pages/contact.html">Contact</a></li>
+      <li><a href="pages/dashboard.html">Dashboard</a></li>
+      <li><a href="pages/login.html"><button class="sm-button">Login</button></a></li>
+      <li><button id="theme-toggle">🌙</button></li>
+    </ul>
+  </nav>
+
+  <!-- ── HERO ───────────────────────────────────────── -->
+  <div class="page">
+
+    <section class="hero">
+      <div>
+        <h1>Where Fun<br>Comes to Life! 🎉</h1>
+        <p style="font-size:1.15rem; max-width:480px;">
+          Discover hundreds of amazing toys for every age. From building blocks to remote-control cars — ToyStore has it all!
+        </p>
+        <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:20px;">
+          <a href="pages/services.html" class="link-button lg-button">Shop Now 🛒</a>
+          <a href="pages/signup.html" class="link-button" style="background:var(--brand-third-color);">Join Free 🎈</a>
+        </div>
+      </div>
+      <div style="font-size:clamp(80px,14vw,140px); text-align:center; line-height:1;">
+        🪀🎮<br>🧩🚀
+      </div>
+    </section>
+
+    <!-- ── CATEGORIES ───────────────────────────────── -->
+    <h2 class="section-title">Shop by Category</h2>
+    <div class="divider"></div>
+
+    <div class="card-container">
+      <div class="card">
+        <div style="font-size:3rem; text-align:center; margin-bottom:12px;">🧩</div>
+        <h3>Puzzles</h3>
+        <p>Brain-teasing fun for all ages. Build skills while having a blast.</p>
+        <a href="pages/services.html">Explore →</a>
+      </div>
+      <div class="card">
+        <div style="font-size:3rem; text-align:center; margin-bottom:12px;">🚗</div>
+        <h3>RC Vehicles</h3>
+        <p>Speed demons & off-road champs. Remote control excitement awaits!</p>
+        <a href="pages/services.html">Explore →</a>
+      </div>
+      <div class="card">
+        <div style="font-size:3rem; text-align:center; margin-bottom:12px;">🧸</div>
+        <h3>Plush Toys</h3>
+        <p>Soft, huggable friends for bedtime and beyond.</p>
+        <a href="pages/services.html">Explore →</a>
+      </div>
+      <div class="card">
+        <div style="font-size:3rem; text-align:center; margin-bottom:12px;">🎨</div>
+        <h3>Arts & Crafts</h3>
+        <p>Unleash creativity with paints, clay, and craft kits.</p>
+        <a href="pages/services.html">Explore →</a>
+      </div>
+      <div class="card">
+        <div style="font-size:3rem; text-align:center; margin-bottom:12px;">🎮</div>
+        <h3>Board Games</h3>
+        <p>Family game nights made legendary. From classics to new hits.</p>
+        <a href="pages/services.html">Explore →</a>
+      </div>
+      <div class="card">
+        <div style="font-size:3rem; text-align:center; margin-bottom:12px;">🔬</div>
+        <h3>STEM Kits</h3>
+        <p>Science, tech, engineering & math toys for future innovators.</p>
+        <a href="pages/services.html">Explore →</a>
+      </div>
+    </div>
+
+    <!-- ── WHY US ─────────────────────────────────── -->
+    <section style="background:var(--bg-card); border-radius:var(--radius-lg); padding:40px 32px; margin-top:48px; box-shadow:var(--shadow-sm);">
+      <h2 class="section-title">Why ToyStore? 🌟</h2>
+      <div class="divider"></div>
+      <div style="display:flex; flex-wrap:wrap; gap:24px; justify-content:center;">
+        <div style="flex:1; min-width:200px; text-align:center; padding:20px;">
+          <div style="font-size:2.5rem; margin-bottom:8px;">🚚</div>
+          <h4>Free Shipping</h4>
+          <p>On orders over $30. Fast & reliable delivery to your door.</p>
+        </div>
+        <div style="flex:1; min-width:200px; text-align:center; padding:20px;">
+          <div style="font-size:2.5rem; margin-bottom:8px;">🔒</div>
+          <h4>Safe & Certified</h4>
+          <p>All toys meet international safety standards. Play worry-free.</p>
+        </div>
+        <div style="flex:1; min-width:200px; text-align:center; padding:20px;">
+          <div style="font-size:2.5rem; margin-bottom:8px;">💝</div>
+          <h4>Gift Wrapping</h4>
+          <p>Make every gift special with our free gift-wrap service.</p>
+        </div>
+        <div style="flex:1; min-width:200px; text-align:center; padding:20px;">
+          <div style="font-size:2.5rem; margin-bottom:8px;">🔄</div>
+          <h4>Easy Returns</h4>
+          <p>30-day hassle-free returns. No questions asked.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FEATURED DEALS ──────────────────────────── -->
+    <div style="margin-top:48px;">
+      <h2 class="section-title">🔥 Hot Deals This Week</h2>
+      <div class="divider"></div>
+      <div class="card-container">
+        <div class="card">
+          <div style="font-size:2.5rem; text-align:center; margin-bottom:10px;">🚀</div>
+          <span class="badge" style="background:var(--brand-primary-color); color:#fff; margin-bottom:8px;">30% OFF</span>
+          <h3>Space Rocket Kit</h3>
+          <p>Build & launch your own rocket. Ages 8+</p>
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-top:auto; padding-top:12px;">
+            <span style="font-size:1.3rem; font-weight:800; color:var(--brand-primary-color);">$21</span>
+            <span style="text-decoration:line-through; color:var(--text-muted-color); font-size:0.9rem;">$30</span>
+          </div>
+          <button data-add-cart style="margin-top:10px; width:100%;">🛒 Add to Cart</button>
+        </div>
+        <div class="card">
+          <div style="font-size:2.5rem; text-align:center; margin-bottom:10px;">🎸</div>
+          <span class="badge" style="background:var(--brand-third-color); color:#fff; margin-bottom:8px;">NEW</span>
+          <h3>Mini Guitar Set</h3>
+          <p>Real strings, real music. Ages 5+</p>
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-top:auto; padding-top:12px;">
+            <span style="font-size:1.3rem; font-weight:800; color:var(--brand-primary-color);">$35</span>
+          </div>
+          <button data-add-cart style="margin-top:10px; width:100%;">🛒 Add to Cart</button>
+        </div>
+        <div class="card">
+          <div style="font-size:2.5rem; text-align:center; margin-bottom:10px;">🧲</div>
+          <span class="badge" style="background:var(--brand-secondary-color); color:#333; margin-bottom:8px;">BESTSELLER</span>
+          <h3>Magnetic Tiles 60pc</h3>
+          <p>Endless 3D building possibilities. Ages 3+</p>
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-top:auto; padding-top:12px;">
+            <span style="font-size:1.3rem; font-weight:800; color:var(--brand-primary-color);">$44</span>
+          </div>
+          <button data-add-cart style="margin-top:10px; width:100%;">🛒 Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ── FOOTER ─────────────────────────────────────── -->
+  <footer>
+    <div class="footer-container">
+      <div>
+        <h1>🧸 ToyStore</h1>
+        <p>Bringing joy to children everywhere since 2010.</p>
+        <p>📍 123 Play Street, Fun City, USA</p>
+        <p>📞 +1 (800) TOY-SHOP</p>
+      </div>
+      <div>
+        <h2>Quick Links</h2>
+        <a href="index.html">Home</a>
+        <a href="pages/services.html">Our Toys</a>
+        <a href="pages/contact.html">Contact Us</a>
+        <a href="pages/dashboard.html">My Account</a>
+      </div>
+      <div>
+        <h2>Customer Care</h2>
+        <a href="#">Shipping Policy</a>
+        <a href="#">Returns & Refunds</a>
+        <a href="#">FAQ</a>
+        <a href="#">Safety Standards</a>
+      </div>
+      <div>
+        <h2>Follow Us</h2>
+        <a href="#">🐦 Twitter / X</a>
+        <a href="#">📸 Instagram</a>
+        <a href="#">👍 Facebook</a>
+        <a href="#">▶️ YouTube</a>
+      </div>
+    </div>
+    <p style="text-align:center; border-top:1px solid rgba(255,255,255,0.10); padding-top:20px;">
+      © 2025 ToyStore. All rights reserved. Made with ❤️ for little dreamers.
+    </p>
+  </footer>
+
+  <script src="jsFile/jsFunctions.js"></script>
+</body>
+</html>
